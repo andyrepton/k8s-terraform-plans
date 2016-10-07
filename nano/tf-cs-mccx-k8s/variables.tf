@@ -19,8 +19,13 @@ variable "cs_zones" {
 }
 
 # This should be your office or VPN IP address, for the firewall
-variable "source_cidr" {
+variable "source_cidr_1" {
   default = "195.66.90.0/24"
+}
+
+# Extra CIDR, like home address or other
+variable "source_cidr_2" {
+  default = "195.66.96.0/24"
 }
 
 # You will need to change these to match your service offerings in CloudStack

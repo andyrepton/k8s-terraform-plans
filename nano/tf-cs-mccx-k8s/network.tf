@@ -31,8 +31,15 @@ resource "cloudstack_network_acl_rule" "acl-rule" {
   count = "${lookup(var.counts, "vpc")}"
   acl_id = "${element(cloudstack_network_acl.acl.*.id, count.index)}"
 
-   rule {
-    source_cidr = "${var.source_cidr}"
+  rule {
+    source_cidr = "${var.source_cidr_1}"
+    protocol = "all"
+    action = "allow"
+    traffic_type = "ingress"
+  }
+
+  rule {
+    source_cidr = "${var.source_cidr_2}"
     protocol = "all"
     action = "allow"
     traffic_type = "ingress"

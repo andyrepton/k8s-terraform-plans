@@ -60,7 +60,7 @@ variable "auth" {
 # You need to have a keypair in CloudStack for Cloud-Config to put onto the servers.
 # You can find instructions on this here: https://shankerbalan.net/blog/ssh-keys-on-cloudstack-guest-instances-using-cloud-init/
 variable "keypair" {
-  default = "terraform"
+  default = "deployment"
 }
 
 # Put your registry in here if you have one, allowing you to push/pull images

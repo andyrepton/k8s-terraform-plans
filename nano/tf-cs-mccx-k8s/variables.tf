@@ -2,8 +2,8 @@ variable "clustername" {}
 
 # Replace these with your api key/secret key/api url
 provider "cloudstack" {
-    api_key       =  "${replace("${file("~/.terraform/nl2_cs_api_key")}", "\n", "")}"
-    secret_key    =  "${replace("${file("~/.terraform/nl2_cs_secret_key")}", "\n", "")}"
+    api_key       =  "${replace("${file("~/.terraform/nl2_cs_mccx_api_key")}", "\n", "")}"
+    secret_key    =  "${replace("${file("~/.terraform/nl2_cs_mccx_secret_key")}", "\n", "")}"
     api_url       =  "https://beta-nl2.mcc.schubergphilis.com/client/api"
     alias         =  "nl2"
 }

@@ -77,11 +77,11 @@ variable "custom_host_entry" {
 # In case you would like to use custom binaries you've build yourself
 variable "binaries" {
   default = {
-    kube-apiserver = "https://storage.googleapis.com/kubernetes-release/release/v1.3.0/bin/linux/amd64/kube-apiserver"
-    kube-controller-manager = "https://storage.googleapis.com/kubernetes-release/release/v1.3.0/bin/linux/amd64/kube-controller-manager"
-    kube-scheduler = "https://storage.googleapis.com/kubernetes-release/release/v1.3.0/bin/linux/amd64/kube-scheduler"
-    kube-proxy = "https://storage.googleapis.com/kubernetes-release/release/v1.3.0/bin/linux/amd64/kube-proxy"
-    kube-kubelet = "https://storage.googleapis.com/kubernetes-release/release/v1.3.0/bin/linux/amd64/kubelet"
+    kube-apiserver = "https://storage.googleapis.com/kubernetes-release/release/v1.6.6/bin/linux/amd64/kube-apiserver"
+    kube-controller-manager = "https://storage.googleapis.com/kubernetes-release/release/v1.6.6/bin/linux/amd64/kube-controller-manager"
+    kube-scheduler = "https://storage.googleapis.com/kubernetes-release/release/v1.6.6/bin/linux/amd64/kube-scheduler"
+    kube-proxy = "https://storage.googleapis.com/kubernetes-release/release/v1.6.6/bin/linux/amd64/kube-proxy"
+    kube-kubelet = "https://storage.googleapis.com/kubernetes-release/release/v1.6.6/bin/linux/amd64/kubelet"
   }
 }
 
